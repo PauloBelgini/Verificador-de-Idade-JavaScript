@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--Chama a função JS ao carregar a pagina-->
+<body onload="carregar()">
+
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+
+        <div>
+            <!--Input para colocar o ano-->
+            <p>Ano de nascimento:
+                <input type="number" name="textano" id="textano">
+            </p>
+            <p>
+                <!--Input para selecionar o sexo-->
+                Sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label>Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label>Feminino</label>
+            </p>
+            <!--Input do tipo botão que ao ser acionado chama a função verificar-->
+            <input type="button" value="Verificar" onclick="verificar()">
+        </div>
+
+        <div id="res">
+           Preencha os dados acima para ver o resultado!
+        </div>
+
+    </section>
+    <footer>
+        <p>Paulo Belgini</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
